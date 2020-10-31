@@ -61,20 +61,14 @@ class Main extends Component {
                         </div>
                         <button type="button" onClick={this.handleLogout}>Logout</button>
                     </div>
-                    <div className='view-container'>
-                        <div className="d-flex">
-                           <div className="col-sm-6">
-                                <div>
-                                    <iframe src= {inputValueOne} height="200" width="300" title="Iframe Example"></iframe>
-                                </div>
-                            </div>
-                            <div className="col-sm-6">
-                                <div>
-                                    <iframe src= {inputValueTwo} height="200" width="300" title="Iframe Example"></iframe>
-                                </div>
-                            </div>
-                        </div>              
-                        
+                    <div className='view-container'>                        
+                        <div>
+                            <iframe src= {inputValueOne} height="200" width="300" title="Iframe Example"></iframe>
+                        </div>
+                    
+                        <div>
+                            <iframe src= {inputValueTwo} height="200" width="300" title="Iframe Example"></iframe>
+                        </div>
                     </div>
                 </div>)
         }

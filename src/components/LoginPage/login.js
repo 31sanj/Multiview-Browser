@@ -33,28 +33,22 @@ class Login extends Component{
     render(){
         return(
             <div className='login-container'>
-                <form onSubmit={this.handleSubmit}>
-                    <div className="form-group">
-                        <label className="text-muted">Username</label>
-                        <input
-                            name="username"
-                            type="text"
-                            className="form-control"
-                        />
+                <div class="row">
+                    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                        <h5 class="title-text-center">Log In</h5>
+                        <form onSubmit={this.handleSubmit} className="log-in">
+                            <div className="form-label-group">
+                                    <label for="username">Username:</label>
+                                    <input name="username" type="text" className="form-control" placeholder="Enter username"  />
+                                </div>
+                            <div className="form-label-group">
+                                        <label for="pwd">Password:</label>
+                                        <input name="password" className="form-control" placeholder="Enter password" />
+                                </div>                               
+                            <button type="submit" className="btn btn-lg btn-primary btn-block text-uppercase">Log in</button>
+                        </form>
                     </div>
-                    <div className="form-group">
-                        <label className="text-muted">Password</label>
-                        <input
-                            name="password"
-                            type="password"
-                            className="form-control"
-                        />
-                    </div>
-                    <button
-                        className="btn btn-primary">
-                        Log In
-                    </button>
-                </form>
+                </div>
             </div>
         )
     }
