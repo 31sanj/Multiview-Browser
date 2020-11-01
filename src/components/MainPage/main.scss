@@ -1,20 +1,38 @@
 .main-container {
     display: flex;
     flex-direction: column;
-    border: 1px solid darkblue;
-    height: 100%;
+    height: 100vh;
     width: 100%;
+    background-color: #e3afbc;
         
     .nav-container{
         display: flex;
-        border: 1px solid darkblue;
-        justify-content: space-around;
+        background-color: #e8648b;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 4px;
+        height: 9vh;
 
+        .form-control {
+            width: 140%;
+        }
+
+        p {
+            font-size: large;
+        }
+
+        .btn {
+            margin-bottom: 6px !important;
+        }
     }
 
     .view-container{
         display: flex;
-        border: 1px solid darkblue;
         justify-content: space-around;
-     }
+        height: 90vh;
+
+        .view1{
+            background-color: white;
+        }
+    }
 }

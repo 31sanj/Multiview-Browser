@@ -1,9 +1,13 @@
-.login-container{
-
-  border: 0;
-  border-radius: 1rem;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-  width: 100%;
+.login{
+  background-color: #e3afbc;
+  height: 100vh;
+  //background-image: linear-gradient(to top, #a08eca 0%, #c2cffb 100%);
+       
+    .card {
+      top: 25vh; 
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
 
     .form-label-group {
       position: relative;
@@ -15,13 +19,19 @@
       border-radius: 2rem;
     }
 
+    // .form-control {
+    //     width: 50%;
+    // }
+
     .log-in .btn {
       font-size: 80%;
-      border-radius: 5rem;
+      border-radius: 19px;
       letter-spacing: .1rem;
       font-weight: bold;
-      padding: 1rem;
+      padding: 10px;
       transition: all 0.2s;
+      width: 100%;
+      margin-top:10px;
     }
 
     .title-text-center{

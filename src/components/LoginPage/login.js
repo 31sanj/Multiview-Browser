@@ -32,20 +32,20 @@ class Login extends Component{
 
     render(){
         return(
-            <div className='login-container'>
-                <div class="row">
-                    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-                        <h5 class="title-text-center">Log In</h5>
-                        <form onSubmit={this.handleSubmit} className="log-in">
+            <div className='login'>
+                <div className="d-flex">
+                    <div className="col-sm-9 col-md-7 col-lg-3 mx-auto card">
+                        <h5 className="title-text-center">Log In</h5>
+                        <form onSubmit={this.handleSubmit} className="log-in mx-auto">
                             <div className="form-label-group">
-                                    <label for="username">Username:</label>
-                                    <input name="username" type="text" className="form-control" placeholder="Enter username"  />
-                                </div>
+                                <label for="username">Username:</label>
+                                <input name="username" type="text" className="form-control" placeholder="Enter username"  />
+                            </div>
                             <div className="form-label-group">
-                                        <label for="pwd">Password:</label>
-                                        <input name="password" className="form-control" placeholder="Enter password" />
-                                </div>                               
-                            <button type="submit" className="btn btn-lg btn-primary btn-block text-uppercase">Log in</button>
+                                <label for="pwd">Password:</label>
+                                <input name="password" className="form-control" placeholder="Enter password" />
+                            </div>                               
+                            <button type="submit" className="btn btn-lg btn-primary text-uppercase">Log in</button>
                         </form>
                     </div>
                 </div>
